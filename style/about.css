@@ -1,0 +1,42 @@
+.about-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  top: 100vh;
+  /* background: rgb(29, 171, 214); */
+  background: #222;
+  color: white;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  border-top: 30px solid white;
+}
+
+.about {
+  width: 60%;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  /* background: blueviolet; */
+  display: grid;
+  grid-template-areas:
+    '. img short-text'
+    '. long-text .';
+}
+
+.about > img {
+  display: inline-block;
+  width: 400px;
+  margin: 0 auto;
+  grid-area: img;
+  /* background: red; */
+}
+
+.about > p {
+  grid-area: short-text;
+}
+
+.about > .about-text {
+  grid-area: long-text;
+}

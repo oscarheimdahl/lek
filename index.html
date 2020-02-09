@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="keyframes.css" />
-    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/modules/p5.js"></script>
+    <script src="js/modules/p5.dom.js"></script>
+
+    <!-- <script src="js/test/dots.js"></script> -->
+    <!-- <script src="js/test/dot.js"></script> -->
+    <!-- <script src="js/wave.js"></script> -->
+    <script src="js/lek.js"></script>
+
+    <link rel="stylesheet" href="style/intro.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link rel="stylesheet" href="style/keyframes.css" />
+    <link rel="stylesheet" href="style/contact.css" />
     <title>Document</title>
   </head>
   <body>
+    <div id="p5"></div>
     <div class="background">
       <div class="center-container">
         <div class="intro">
@@ -25,28 +39,38 @@
 
       <div class="boxes">
         <!-- <div class="box box1"></div>
-        <div class="box box3"></div>
-        <div class="box box2"></div> -->
+        <div class="box box2"></div>
+        <div class="box box3"></div> -->
       </div>
-
-      <div class="contact">
-        <div class="mail">
-          <img
-            src="./resources/round_alternate_email_white_18dp.png"
-            alt="email"
-          />
-          <div class="mail-content">o.heimdahl@gmail.com</div>
+    </div>
+    <div class="overlay"></div>
+    <div class="about-background">
+      <div class="about">
+        <img src="./resources/proffe2.png" alt="bild på mig" />
+        <p>Här är en liten kort text som är bra!</p>
+        <div class="about-text">
+          Hej! Oscar Heimdahl heter jag och går fjärde året på
+          Civilingenjörsutbildningen interaktion och design i Umeå. Jag har
+          alltid gillat datorer att ge saker struktur och ordning. Under min
+          utbildning har jag kommit i kontakt med flera olika arbetssätt inom
+          design och programmering, något jag lärt mig uppskatta och använda
+          dagligen. Då min utbildning till stor del går in på både design och
+          programmering så har jag en väldigt bred kompetens på många områden.
+          Det ger mig förmågan att kunna kommunicera med båda datorvetare och
+          designers, och även kunna agera som en bro mellan dem. Jag föredrar
+          programmering i dagsläget och siktar på att bli en front-end
+          utvecklare.
         </div>
-        <div class="phone">
-          <img src="./resources/round_phone_white_18dp.png" alt="email" />
-          <div class="phone-content">073-08 56 190</div>
-        </div>
-        <!-- <a
-          href="https://www.linkedin.com/in/oscar-heimdahl-9b9428152/"
-          class="linkedin"
-        >
-          in
-        </a> -->
+      </div>
+    </div>
+    <div class="contact">
+      <div class="mail">
+        <img src="./resources/email-icon.png" alt="email" />
+        <div class="mail-content">o.heimdahl@gmail.com</div>
+      </div>
+      <div class="phone">
+        <img src="./resources/phone-icon.png" alt="phone" />
+        <div class="phone-content">073-08 56 190</div>
       </div>
     </div>
   </body>
