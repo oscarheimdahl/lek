@@ -1,42 +1,58 @@
 .about-background {
   position: relative;
-  height: 100vh;
   width: 100%;
   top: 100vh;
-  /* background: rgb(29, 171, 214); */
   background: #222;
   color: white;
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-  border-top: 30px solid white;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
 }
 
 .about {
-  width: 60%;
+  padding: 200px 0;
+  /* width: 60%; */
+  max-width: 1000px;
   align-content: center;
   justify-items: center;
   align-items: center;
   /* background: blueviolet; */
   display: grid;
   grid-template-areas:
-    '. img short-text'
-    '. long-text .';
+    '. profile profile-text .'
+    '. tools-text tools .';
 }
 
-.about > img {
+.profile {
   display: inline-block;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   margin: 0 auto;
-  grid-area: img;
+  grid-area: profile;
+  border: solid 6px lightgreen;
+  border-radius: 1000px;
   /* background: red; */
 }
 
-.about > p {
-  grid-area: short-text;
+.profile-text {
+  grid-area: profile-text;
 }
 
-.about > .about-text {
-  grid-area: long-text;
+.tools {
+  grid-area: tools;
+  width: 80%;
+  max-width: 300px;
+  border: solid 6px lightgreen;
+  border-radius: 1000px;
+}
+
+.tools-text {
+  grid-area: tools-text;
+}
+
+.about * {
+  padding: 10px;
 }
