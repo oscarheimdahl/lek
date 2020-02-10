@@ -1,27 +1,26 @@
+let p;
+let w = 10;
+
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent('p5');
-  noFill();
-  frameRate(2);
+  initCanvas();
   noStroke();
-  rectMode(CENTER);
-  for (let i = 0; i < 50; i++) {
-    draw();
-  }
+  fill(255);
+  p = createVector(100, 100);
 }
 
 function draw() {
-  //   background(random(255), random(255), random(255), 100);
-  fill(randomColor(100));
-  let x = random(width);
-  let y = random(height);
-  //   let width = width - x;
-
-  rect(x, y, 600, 600);
+  ellipse(p.x, p.y, w);
+  p.x++;
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  setup();
+}
+
+function initCanvas() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('p5');
 }
 
 function randomColor(alpha) {

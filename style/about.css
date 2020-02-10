@@ -2,8 +2,8 @@
   position: relative;
   width: 100%;
   top: 100vh;
-  background: #222;
-  color: white;
+  background: rgb(12, 20, 46);
+  color: black;
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
@@ -13,30 +13,37 @@
 }
 
 .about {
-  padding: 100px 0;
-  /* width: 60%; */
+  margin: 100px 0;
+  filter: blur(0);
+  padding: 40px;
   max-width: 1000px;
   align-content: center;
   justify-items: center;
   align-items: center;
-  /* background: blueviolet; */
   display: grid;
   grid-template-areas:
     'line profile profile-text .'
     '. tools-text tools line2';
+  background: white; /* border: solid white 4px; */
+  /* border-radius: 20px; */
+  outline: solid black 2px;
+  outline-offset: -20px;
 }
 
 .profile,
 .tools {
-  display: inline-block;
   width: 30vw;
   min-width: 300px;
   max-width: 400px;
-  margin: 0 auto;
   grid-area: profile;
-  border: solid 6px lightgreen;
+}
+
+.profile {
+  width: 25vw;
+  min-width: 300px;
+  max-width: 350px;
+  /* border: 2px solid rgb(243, 224, 52); */
   border-radius: 1000px;
-  /* background: red; */
 }
 
 .tools {
@@ -46,46 +53,25 @@
 .profile-text,
 .tools-text {
   grid-area: profile-text;
-  /* width: 80%; */
-  /* justify-self: start; */
-  /* padding-right: 50px; */
-  padding: 0 10px;
   align-self: center;
-  height: 170px;
-  border-left: lightpink solid 5px;
+  padding: 25px;
+  /* border-top: solid black 2px;
+  border-right: solid black 2px; */
 }
 
 .tools-text {
   grid-area: tools-text;
   justify-self: end;
   border: none;
-  border-right: lightpink solid 5px;
-
-  /* padding-left: 50px; */
-}
-
-.about * {
-  /* padding: 10px; */
-  /* margin: 0 10px; */
-  /* border: solid white 1px; */
-}
-
-.line {
-  grid-area: line;
-  width: 100%;
-  height: 0;
-  border: 5px solid lightpink;
-}
-
-.line2 {
-  grid-area: line2;
+  /* border-left: solid black 2px;
+  border-bottom: solid black 2px; */
 }
 
 @media only screen and (max-width: 800px) {
   .about {
     grid-template-areas:
-      '. profile .'
       '. profile-text .'
+      '. profile .'
       '. tools .'
       '. tools-text .';
   }
