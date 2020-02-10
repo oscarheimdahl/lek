@@ -5,6 +5,9 @@ function setup() {
   frameRate(2);
   noStroke();
   rectMode(CENTER);
+  for (let i = 0; i < 50; i++) {
+    draw();
+  }
 }
 
 function draw() {

@@ -13,7 +13,7 @@
 }
 
 .about {
-  padding: 200px 0;
+  padding: 100px 0;
   /* width: 60%; */
   max-width: 1000px;
   align-content: center;
@@ -22,13 +22,15 @@
   /* background: blueviolet; */
   display: grid;
   grid-template-areas:
-    '. profile profile-text .'
-    '. tools-text tools .';
+    'line profile profile-text .'
+    '. tools-text tools line2';
 }
 
-.profile {
+.profile,
+.tools {
   display: inline-block;
-  width: 80%;
+  width: 30vw;
+  min-width: 300px;
   max-width: 400px;
   margin: 0 auto;
   grid-area: profile;
@@ -37,22 +39,64 @@
   /* background: red; */
 }
 
-.profile-text {
-  grid-area: profile-text;
-}
-
 .tools {
   grid-area: tools;
-  width: 80%;
-  max-width: 300px;
-  border: solid 6px lightgreen;
-  border-radius: 1000px;
+}
+
+.profile-text,
+.tools-text {
+  grid-area: profile-text;
+  /* width: 80%; */
+  /* justify-self: start; */
+  /* padding-right: 50px; */
+  padding: 0 10px;
+  align-self: center;
+  height: 170px;
+  border-left: lightpink solid 5px;
 }
 
 .tools-text {
   grid-area: tools-text;
+  justify-self: end;
+  border: none;
+  border-right: lightpink solid 5px;
+
+  /* padding-left: 50px; */
 }
 
 .about * {
-  padding: 10px;
+  /* padding: 10px; */
+  /* margin: 0 10px; */
+  /* border: solid white 1px; */
+}
+
+.line {
+  grid-area: line;
+  width: 100%;
+  height: 0;
+  border: 5px solid lightpink;
+}
+
+.line2 {
+  grid-area: line2;
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    grid-template-areas:
+      '. profile .'
+      '. profile-text .'
+      '. tools .'
+      '. tools-text .';
+  }
+
+  .line {
+    display: none;
+  }
+  .about * {
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    margin: 20px 0;
+  }
 }
