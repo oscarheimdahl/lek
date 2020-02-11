@@ -1,17 +1,17 @@
-let p;
-let w = 10;
-
 function setup() {
   initCanvas();
+  ellipseMode(CENTER);
+  //   setBoxes();
   noStroke();
-  fill(255);
-  p = createVector(100, 100);
 }
 
 function draw() {
-  ellipse(p.x, p.y, w);
-  p.x++;
+  fill(color(31, 160, 121));
+  rotate(PI / 10);
+  rect(-100, (height / 3) * 2, width * 2, height);
 }
+
+function setBoxes() {}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

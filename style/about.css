@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   top: 100vh;
-  background: rgb(12, 20, 46);
+  height: 100vh;
+  /* background: rgb(12, 20, 46); */
   color: black;
   display: grid;
   grid-template-rows: auto;
@@ -13,6 +14,7 @@
 }
 
 .about {
+  border-radius: 5px;
   margin: 100px 0;
   filter: blur(0);
   padding: 40px;
@@ -28,6 +30,7 @@
   /* border-radius: 20px; */
   outline: solid black 2px;
   outline-offset: -20px;
+  /* pointer-events: none; */
 }
 
 .profile,
@@ -70,10 +73,17 @@
 @media only screen and (max-width: 800px) {
   .about {
     grid-template-areas:
-      '. profile-text .'
       '. profile .'
+      '. profile-text .'
       '. tools .'
       '. tools-text .';
+    margin: 10px;
+    padding: 10px 0;
+    outline: none;
+    /* height: 80%; */
+    /* top: 20%; */
+    /* position: relative; */
+    /* align-self: start; */
   }
 
   .line {
@@ -83,6 +93,10 @@
     justify-content: center;
     justify-self: center;
     align-content: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
+}
+
+body {
+  /* overflow: ; */
 }
