@@ -17,7 +17,6 @@
   position: relative;
   border-radius: 5px;
   margin: 100px 0;
-  filter: blur(0);
   padding: 40px;
   max-width: 1000px;
   align-content: center;
@@ -77,22 +76,11 @@
       '. profile-text .'
       '. tools .'
       '. tools-text .';
-    /* margin: 10px; */
     padding: 10px 0;
-    /* top: 10px; */
     outline: none;
-    /* height: 80%; */
-    /* top: 20%; */
-    /* position: relative; */
-    /* align-self: start; */
     font-size: 0.8em;
-    /* padding-top: -100px; */
     margin-bottom: 0;
     z-index: 2;
-  }
-
-  .about-background {
-    overflow: auto;
   }
 
   .profile {
@@ -108,5 +96,10 @@
     justify-self: center;
     align-content: center;
     /* margin: 20px 0; */
+  }
+}
+@media only screen and (max-height: 800px) {
+  .about-background {
+    overflow: auto;
   }
 }

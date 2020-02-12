@@ -1,0 +1,42 @@
+.projects-background {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  color: black;
+  user-select: none;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: start;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+  /* overflow: visible; */
+}
+
+.projects {
+  margin-top: 100px;
+  position: relative;
+  border-radius: 5px;
+  align-content: center;
+  justify-items: center;
+  align-items: flex-start;
+  display: flex;
+  background: white;
+  transition-duration: 300ms;
+  width: 80%;
+  /* height: 9000px; */
+  padding: 30px;
+}
+
+.project > h3 {
+  /* width: 70%; */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project > img {
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
