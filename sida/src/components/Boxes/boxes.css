@@ -1,0 +1,65 @@
+.boxes {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+}
+
+.box {
+  position: absolute;
+  opacity: 0.9;
+  animation-iteration-count: infinite;
+
+  animation-duration: 200s;
+}
+
+.box1 {
+  width: 20000px;
+  height: 20000px;
+  left: -10000px;
+  bottom: -19900px;
+  background: rgb(31, 160, 121);
+  background: rgb(0, 141, 223);
+
+  /* animation-duration: 2s; */
+  animation-name: rotate;
+
+  /* background: rgb(209, 209, 209); */
+}
+
+.box2 {
+  width: 20000px;
+  height: 20000px;
+  left: -19800px;
+  top: -10000px;
+  background: rgb(0, 141, 223);
+  background: rgb(179, 0, 39);
+
+  /* animation-duration: 2s; */
+  animation-name: rotate2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(-100deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+
+  100% {
+    transform: rotate(-100deg);
+  }
+}
