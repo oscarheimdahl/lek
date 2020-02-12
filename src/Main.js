@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Contact from './components/Contact/Contact';
 import Boxes from './components/Boxes/Boxes';
 import About from './components/About/About';
-import './style/intro.css';
+import './main.css';
 
-export class App extends Component {
+export class Main extends Component {
   state = { aboutPage: false };
 
   closeAbout = event => {
@@ -43,4 +43,4 @@ export class App extends Component {
   }
 }
 
-export default App;
+export default Main;

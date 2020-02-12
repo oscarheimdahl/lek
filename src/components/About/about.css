@@ -28,7 +28,7 @@
     'line profile profile-text .'
     '. tools-text tools line2';
   background: white; /* border: solid white 4px; */
-  outline: solid black 2px;
+  /* outline: solid black 2px; */
   outline-offset: -20px;
   transition-duration: 300ms;
 }
