@@ -10,13 +10,13 @@ export class About extends Component {
         className="about-background"
         onClick={event => this.props.close(event)}
         onScroll={event => {
-          if (event.target.scrollTop === 0) this.props.close(event);
+          if (event.target.scrollTop < 0) this.props.close(event);
         }}
         style={{ pointerEvents: this.props.toggled ? 'visible' : 'none' }}
       >
         <div
           className="about"
-          style={{ top: this.props.toggled ? 0 : '100vh' }}
+          style={{ top: this.props.toggled ? 0 : '130vh' }}
         >
           <img className="profile" src={profile} alt="bild på mig" />
           <div className="profile-text">

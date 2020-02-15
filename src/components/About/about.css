@@ -102,4 +102,8 @@
   .about-background {
     overflow: auto;
   }
+
+  .about {
+    margin-bottom: 100px;
+  }
 }

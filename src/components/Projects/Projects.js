@@ -7,9 +7,6 @@ export class Projects extends Component {
       <div
         className="projects-background"
         onClick={event => this.props.close(event)}
-        // onScroll={event => {
-        //   if (event.target.scrollTop === 0) this.props.close(event);
-        // }}
         style={{
           pointerEvents: this.props.toggled ? 'visible' : 'none',
           overflow: this.props.toggled ? 'auto' : 'hidden'
@@ -17,7 +14,7 @@ export class Projects extends Component {
       >
         <div
           className="projects"
-          style={{ marginTop: this.props.toggled ? '100px' : '100vh' }}
+          style={{ top: this.props.toggled ? '100px' : '100vh' }}
         >
           <div className="project">
             <h3>Här är projekt 1</h3>
