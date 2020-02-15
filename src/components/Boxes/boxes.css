@@ -3,6 +3,8 @@
   margin: 0 auto;
   height: 100%;
   position: absolute;
+  user-select: none;
+  pointer-events: none;
 }
 
 .box {
