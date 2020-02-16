@@ -3,6 +3,7 @@ import './projects.css';
 import typer from '../../resources/projects/typer.jpg';
 import alvira from '../../resources/projects/alvira.jpg';
 import arboreal from '../../resources/projects/arboreal.png';
+import tetris from '../../resources/projects/tetris.png';
 import close from '../../resources/icons/x.png';
 
 export class Projects extends Component {
@@ -21,7 +22,7 @@ export class Projects extends Component {
       >
         <div
           className="projects"
-          style={{ top: this.props.toggled ? '0px' : '3000px' }}
+          style={{ top: this.props.toggled ? '0px' : '3500px' }}
         >
           <img
             className="close-button"
@@ -65,6 +66,16 @@ export class Projects extends Component {
               vi tog reda på hur målgruppen skulle använda appen. Vår
               slutgiltiga överlämning till Arboreal var en klickbar hi-fi
               prototyp skapad i Adobe XD.
+            </p>
+          </div>
+          <div className="project">
+            <h1>Tetris</h1>
+            <img src={tetris} alt="bild"></img>
+            <p>
+              Tetris! <br /> Byggt i JavaScript med biblioteket{' '}
+              <a href="https://p5js.org/">p5.js</a> för att rita på canvas.{' '}
+              <br /> Spela{' '}
+              <a href="https://oscarheimdahl.github.io/tetris/">här!</a>
             </p>
           </div>
         </div>
