@@ -41,18 +41,6 @@
   animation-name: rotate2;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-8deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-8deg);
-  }
-}
-
 @keyframes rotate2 {
   0% {
     transform: rotate(-100deg);
@@ -63,6 +51,17 @@
 
   100% {
     transform: rotate(-100deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-8deg);
   }
 }
 

@@ -12,13 +12,13 @@ export class Projects extends Component {
           if (event.target.scrollTop < -30) this.props.close(event);
         }}
         style={{
-          pointerEvents: this.props.toggled ? 'visible' : 'none',
+          pointerEvents: this.props.toggled ? 'initial' : 'none',
           overflow: this.props.toggled ? 'auto' : 'hidden'
         }}
       >
         <div
           className="projects"
-          style={{ top: this.props.toggled ? '100px' : '2000px' }}
+          style={{ top: this.props.toggled ? '0px' : '2000px' }}
         >
           <div className="project">
             <h1>Typer</h1>
@@ -38,8 +38,8 @@ export class Projects extends Component {
               På <a href="https://alvira.se">Alvira</a> så implementerade jag
               UI:t av deras mobilapp. Flutter användes för att kunna bygga till
               både Android och iOS. Utöver att bygga mobila applikationer så
-              fick jag också erfarenhet i att arbeta och tillsammans problemlösa
-              i ett litet team och tillsammans.
+              fick jag också erfarenhet i att arbeta i ett litet team och
+              tillsammans lösa problem.
             </p>
           </div>
         </div>

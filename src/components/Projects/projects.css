@@ -4,7 +4,7 @@
   top: 0;
   height: 100vh;
   color: black;
-  user-select: none;
+  /* user-select: none; */
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
@@ -86,5 +86,11 @@
     /* position: relative;
     width: 95%;
     left: 2.5%; */
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .projects {
+    margin-bottom: 20vh;
   }
 }

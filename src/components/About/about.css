@@ -4,7 +4,7 @@
   top: 0;
   height: 100vh;
   color: black;
-  user-select: none;
+  /* user-select: none; */
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
@@ -104,6 +104,6 @@
   }
 
   .about {
-    /* margin-bottom: 20vh; */
+    margin-bottom: 20vh;
   }
 }

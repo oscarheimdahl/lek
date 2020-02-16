@@ -12,11 +12,11 @@ export class About extends Component {
         onScroll={event => {
           if (event.target.scrollTop < -30) this.props.close(event);
         }}
-        style={{ pointerEvents: this.props.toggled ? 'auto' : 'none' }}
+        style={{ pointerEvents: this.props.toggled ? 'initial' : 'none' }}
       >
         <div
           className="about"
-          style={{ top: this.props.toggled ? 0 : '130vh' }}
+          style={{ top: this.props.toggled ? 0 : '150vh' }}
         >
           <img className="profile" src={profile} alt="bild på mig" />
           <div className="profile-text">
