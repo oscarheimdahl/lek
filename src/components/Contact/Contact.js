@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import phone from '../../resources/phone-icon.png';
-import email from '../../resources/email-icon.png';
+import phone from '../../resources/icons/phone-icon2.png';
+import email from '../../resources/icons/email-icon.png';
 
 import './contact.css';
 

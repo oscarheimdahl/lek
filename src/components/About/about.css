@@ -32,6 +32,20 @@
   transition-duration: 300ms;
 }
 
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0.4;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  opacity: 1;
+}
+
 .profile,
 .tools {
   width: 30vw;
@@ -81,6 +95,10 @@
     font-size: 0.8em;
     margin-bottom: 0;
     z-index: 2;
+  }
+
+  .close-button {
+    display: none;
   }
 
   .profile {

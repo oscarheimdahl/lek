@@ -10,12 +10,18 @@ export class Main extends Component {
   state = { aboutPage: false, projectsPage: false };
 
   closeAbout = event => {
-    if (event.target.className === 'about-background')
+    if (
+      event.target.className === 'about-background' ||
+      event.target.className === 'close-button'
+    )
       this.setState({ aboutPage: false });
   };
 
   closeProjects = event => {
-    if (event.target.className === 'projects-background')
+    if (
+      event.target.className === 'projects-background' ||
+      event.target.className === 'close-button'
+    )
       this.setState({ projectsPage: false });
   };
 
