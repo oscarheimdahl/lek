@@ -15,10 +15,8 @@ export class Main extends Component {
   };
 
   closeProjects = event => {
-    console.log(event.target.className);
     if (event.target.className === 'projects-background')
       this.setState({ projectsPage: false });
-    console.log(this.state);
   };
 
   render() {

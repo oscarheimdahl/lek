@@ -10,7 +10,7 @@
   justify-items: center;
   align-items: start;
   font-family: Roboto, sans-serif;
-  font-size: 1.5em;
+  /* background: green; */
   /* overflow: visible; */
 }
 
@@ -22,22 +22,69 @@
   justify-items: center;
   align-items: flex-start;
   display: flex;
+  flex-direction: column;
   background: white;
   transition-duration: 300ms;
-  width: 80%;
-  /* height: 9000px; */
   padding: 30px;
-  height: 200vh;
+  width: 60%;
 }
 
-.project > h3 {
+.project {
+  margin-bottom: 30px;
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+
+.project > h1 {
   /* width: 70%; */
   text-align: center;
   margin-bottom: 10px;
+  /* font-size: 1.5em; */
 }
 
 .project > img {
   position: relative;
-  width: 80%;
-  left: 10%;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project > p {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    margin: 0;
+    width: auto;
+    padding: 5px;
+    /* margin-bottom: 20vh; */
+    font-size: 0.8em;
+  }
+
+  .project {
+    /* background: red; */
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .project > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .project > img {
+    /* width: 95%;
+    left: 2.5%; */
+    width: 100%;
+    left: 0;
+  }
+
+  .project > p {
+    /* position: relative;
+    width: 95%;
+    left: 2.5%; */
+  }
 }

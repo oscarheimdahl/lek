@@ -1,21 +1,15 @@
 .contact {
   position: fixed;
   bottom: 0;
-  /* right: 0; */
   display: flex;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   text-align: center;
-  margin: 0 auto;
   justify-self: center;
   user-select: none;
   white-space: nowrap;
-  z-index: 1;
   width: 100%;
-  /* max-width: 2000px; */
-  /* background: red; */
 }
 
 .mail {
@@ -47,6 +41,11 @@
   transition-delay: 100ms;
   color: white;
   user-select: text;
+  margin-right: 10px;
+}
+
+.phone-content {
+  margin-right: 20px;
 }
 
 .mail > img,
