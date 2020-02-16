@@ -9,7 +9,7 @@ export class Projects extends Component {
         className="projects-background"
         onClick={event => this.props.close(event)}
         onScroll={event => {
-          if (event.target.scrollTop < -30) this.props.close(event);
+          if (event.target.scrollTop < -100) this.props.close(event);
         }}
         style={{
           pointerEvents: this.props.toggled ? 'initial' : 'none',
@@ -32,7 +32,7 @@ export class Projects extends Component {
             </p>
           </div>
           <div className="project">
-            <h1>Intern på Alvira</h1>
+            <h1>Internship på Alvira</h1>
             <img src={alvira} alt="bild"></img>
             <p>
               På <a href="https://alvira.se">Alvira</a> så implementerade jag

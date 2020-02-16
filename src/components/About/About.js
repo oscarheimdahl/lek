@@ -10,7 +10,7 @@ export class About extends Component {
         className="about-background"
         onClick={event => this.props.close(event)}
         onScroll={event => {
-          if (event.target.scrollTop < -30) this.props.close(event);
+          if (event.target.scrollTop < -100) this.props.close(event);
         }}
         style={{ pointerEvents: this.props.toggled ? 'initial' : 'none' }}
       >
