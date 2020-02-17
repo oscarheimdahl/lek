@@ -4,6 +4,7 @@ import typer from '../../resources/projects/typer.jpg';
 import alvira from '../../resources/projects/alvira.jpg';
 import arboreal from '../../resources/projects/arboreal.png';
 import tetris from '../../resources/projects/tetris.png';
+import gradient from '../../resources/projects/gradient.png';
 import close from '../../resources/icons/x.png';
 
 export class Projects extends Component {
@@ -22,7 +23,7 @@ export class Projects extends Component {
       >
         <div
           className="projects"
-          style={{ top: this.props.toggled ? '0px' : '3500px' }}
+          style={{ top: this.props.toggled ? '0px' : '4500px' }}
         >
           <img
             className="close-button"
@@ -66,6 +67,19 @@ export class Projects extends Component {
               vi tog reda på hur målgruppen skulle använda appen. Vår
               slutgiltiga överlämning till Arboreal var en klickbar hi-fi
               prototyp skapad i Adobe XD.
+            </p>
+          </div>
+          <div className="project">
+            <h1>Gradient Picker</h1>
+            <img src={gradient} alt="bild"></img>
+            <p>
+              Jag byggde ett smidigt verktyg i React för att enkelt kunna se på
+              olika gradient i CSS. Verktyget tillåter en att exportera
+              gradienterna som CSS eller som en PNG.
+              <br /> Ni kan kika på den{' '}
+              <a href="https://oscarheimdahl.github.io/gradient-picker/">
+                här!
+              </a>
             </p>
           </div>
           <div className="project">
