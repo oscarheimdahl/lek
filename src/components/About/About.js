@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import './about.css';
-import profile from '../../resources/proffe2.png';
+import profile from '../../resources/jag.png';
+import close from '../../resources/icons/x.png';
 
 export class About extends Component {
   render() {
@@ -10,14 +11,20 @@ export class About extends Component {
         className="about-background"
         onClick={event => this.props.close(event)}
         onScroll={event => {
-          if (event.target.scrollTop < -30) this.props.close(event);
+          if (event.target.scrollTop < -50) this.props.close(event);
         }}
-        style={{ pointerEvents: this.props.toggled ? 'auto' : 'none' }}
+        style={{ pointerEvents: this.props.toggled ? 'initial' : 'none' }}
       >
         <div
           className="about"
-          style={{ top: this.props.toggled ? 0 : '130vh' }}
+          style={{ top: this.props.toggled ? 0 : '150vh' }}
         >
+          <img
+            className="close-button"
+            src={close}
+            alt="Stäng"
+            onClick={event => this.props.close(event)}
+          ></img>
           <img className="profile" src={profile} alt="bild på mig" />
           <div className="profile-text">
             <h2>Hej!</h2>
