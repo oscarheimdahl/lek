@@ -7,7 +7,7 @@
   /* overflow: hidden; 
 } */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
 
 #p5 {
   position: fixed;
@@ -17,9 +17,14 @@
   background: rgb(17, 17, 17);
 }
 
+.colors {
+  height: 400px;
+  width: 300px;
+}
+
 .background {
   background: rgb(17, 17, 17);
-
+  background: black;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -33,7 +38,7 @@
   /* width: 600px; */
   height: 400px;
   justify-self: center;
-  margin-top: 20vh;
+  margin-top: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -50,6 +55,37 @@
   color: white;
   /* color: black; */
   font-family: Roboto;
+}
+
+.intro-row1 {
+  display: flex;
+  align-items: center;
+}
+
+svg path {
+  transition-duration: 1000ms;
+}
+svg path:hover {
+  transition-duration: 100ms;
+  /* fill: white; */
+  opacity: 0.2;
+}
+
+.intro h1 {
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 100px;
+}
+
+.intro h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.titles {
+  text-align: left;
 }
 
 .name {
@@ -89,14 +125,15 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .name {
+  /* .name {
     font-size: 3em;
   }
   .title {
     font-size: 1.3em;
-  }
+  } */
   .main-buttons {
     width: 350px;
+    margin-top: 80px;
   }
   .main-button {
     width: 100px;
@@ -104,16 +141,25 @@
     line-height: 50px;
   }
 
+  .intro-row1 svg {
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 150px);
+    opacity: 0.9;
+  }
+
   .center-container {
     position: relative;
     top: -50px;
+    margin-top: 40vh;
     height: 300px;
   }
 
   .center-container h1 {
-    font-size: 2.5em;
+    font-size: 70px;
+    line-height: 70px;
   }
   .center-container h2 {
-    font-size: 1.2em;
+    font-size: 20px;
   }
 }
