@@ -17,11 +17,6 @@
   background: rgb(17, 17, 17);
 }
 
-.colors {
-  height: 400px;
-  width: 300px;
-}
-
 .background {
   background: rgb(17, 17, 17);
   background: black;
@@ -62,6 +57,11 @@
   align-items: center;
 }
 
+.colors {
+  height: 350px;
+  width: 240px;
+}
+
 svg path {
   transition-duration: 1000ms;
 }
@@ -72,9 +72,9 @@ svg path:hover {
 }
 
 .intro h1 {
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 300;
-  line-height: 100px;
+  line-height: 90px;
 }
 
 .intro h2 {
