@@ -68,7 +68,7 @@ svg path {
 svg path:hover {
   transition-duration: 100ms;
   /* fill: white; */
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .intro h1 {
@@ -131,6 +131,10 @@ svg path:hover {
   .title {
     font-size: 1.3em;
   } */
+
+  .boxes {
+    display: none;
+  }
   .main-buttons {
     width: 350px;
     margin-top: 80px;

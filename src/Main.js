@@ -63,7 +63,7 @@ export class Main extends Component {
             </div>
           </div>
 
-          {/* <Boxes></Boxes> */}
+          <Boxes></Boxes>
         </div>
         <Contact></Contact>
         <Projects
