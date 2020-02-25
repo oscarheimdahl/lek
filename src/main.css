@@ -137,7 +137,7 @@ svg path:hover {
   }
   .main-buttons {
     width: 350px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .main-button {
     width: 100px;
@@ -148,15 +148,21 @@ svg path:hover {
   .intro-row1 svg {
     position: absolute;
     z-index: -1;
+    /* top: calc(50% - 175px); */
+    /* top: 50px; */
+    top: -30px;
     left: calc(50% - 120px);
     opacity: 0.9;
   }
 
   .center-container {
-    position: relative;
-    top: -50px;
-    margin-top: 40vh;
+    position: absolute;
+    /* background: red; */
+    top: calc(40% - 150px);
+    margin-top: 0;
     height: 300px;
+    /* display: inline-block; */
+    /* background: red; */
   }
 
   .center-container h1 {
