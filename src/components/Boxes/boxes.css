@@ -22,7 +22,7 @@
   bottom: -19900px;
   background: rgb(31, 160, 121);
   background: rgb(0, 141, 223);
-  background: rgba(202, 202, 202, 0.05);
+  background: rgba(202, 202, 202, 0.1);
 
   /* animation-duration: 2s; */
   animation-name: rotate;
@@ -37,7 +37,7 @@
   top: -10000px;
   background: rgb(0, 141, 223);
   background: rgb(179, 0, 39);
-  background: rgba(202, 202, 202, 0.05);
+  background: rgba(202, 202, 202, 0.1);
 
   /* animation-duration: 2s; */
   animation-name: rotate2;

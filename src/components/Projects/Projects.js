@@ -8,11 +8,21 @@ import gradient from '../../resources/projects/gradient.png';
 import close from '../../resources/icons/x.png';
 
 export class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.projects = React.createRef();
+  }
+
   render() {
     return (
       <div
+        ref={this.projects}
         className="projects-background"
-        onClick={event => this.props.close(event)}
+        onClick={event => {
+          this.props.close(event);
+          this.projects.current.scrollTop = 0;
+        }}
         onScroll={event => {
           if (event.target.scrollTop < -50) this.props.close(event);
         }}
@@ -23,7 +33,7 @@ export class Projects extends Component {
       >
         <div
           className="projects"
-          style={{ top: this.props.toggled ? '0px' : '4500px' }}
+          style={{ top: this.props.toggled ? '0px' : '100vh' }}
         >
           <img
             className="close-button"
