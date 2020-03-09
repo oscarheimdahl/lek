@@ -20,8 +20,7 @@ export class Projects extends Component {
         ref={this.projects}
         className="projects-background"
         onClick={event => {
-          this.props.close(event);
-          this.projects.current.scrollTop = 0;
+          this.props.close(event, this.projects);
         }}
         onScroll={event => {
           if (event.target.scrollTop < -50) this.props.close(event);

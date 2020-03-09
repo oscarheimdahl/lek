@@ -18,12 +18,14 @@ export class Main extends Component {
       this.setState({ aboutPage: false });
   };
 
-  closeProjects = event => {
+  closeProjects = (event, ref) => {
     if (
       event.target.className === 'projects-background' ||
       event.target.className === 'close-button'
-    )
+    ) {
+      ref.current.scrollTop = 0;
       this.setState({ projectsPage: false });
+    }
   };
 
   render() {
