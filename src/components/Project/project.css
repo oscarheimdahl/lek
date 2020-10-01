@@ -3,6 +3,9 @@
   margin-bottom: 7vh;
   position: relative;
   width: calc(50% - 20px);
+  /* left: 10%; */
+  /* background: red; */
+  z-index: 1;
 }
 
 .project:last-child {
@@ -13,14 +16,39 @@
   margin-bottom: 10px;
 }
 
-.project > img {
+.project .image-container {
+  /* display: grid;
+  align-content: center;
+  justify-content: center; */
+  /* background: red; */
+  padding-bottom: 56.25%;
+  /* height: 56.25%; */
+  width: 100%;
+  /* background: red; */
+  /* overflow: hidden; */
+}
+
+.project img {
   position: relative;
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 30px;
+  transition-duration: 300ms;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project img:hover {
+  cursor: pointer;
+  width: 98%;
+  padding: 0.5%;
+  border-radius: 8px;
 }
 
 .project > p {
+  margin-top: 30px;
   font-size: 1.3em;
   padding: 0 10px;
 }
@@ -50,5 +78,8 @@
     margin-bottom: 10px;
     width: 100%;
     left: 0;
+  }
+  .project > p {
+    margin-top: 40px;
   }
 }

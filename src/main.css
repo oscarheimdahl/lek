@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  background-color: black;
+}
+
 /* body {
   /* overflow: hidden; 
 } */
