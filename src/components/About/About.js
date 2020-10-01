@@ -9,8 +9,8 @@ export class About extends Component {
     return (
       <div
         className="about-background"
-        onClick={event => this.props.close(event)}
-        onScroll={event => {
+        onClick={(event) => this.props.close(event)}
+        onScroll={(event) => {
           if (event.target.scrollTop < -50) this.props.close(event);
         }}
         style={{ pointerEvents: this.props.toggled ? 'initial' : 'none' }}
@@ -23,7 +23,7 @@ export class About extends Component {
             className="close-button"
             src={close}
             alt="Stäng"
-            onClick={event => this.props.close(event)}
+            onClick={(event) => this.props.close(event)}
           ></img>
           <img className="profile" src={profile} alt="bild på mig" />
           <div className="profile-text">
@@ -33,11 +33,11 @@ export class About extends Component {
             arbeta med frontend-utveckling.
             <br />
             <br />
-            Jag har erfarenhet inom webutveckling, är mycket bekväm i JavaScript
-            och flera av dess bibliotek och ramverk som t.ex. React. Jag har
-            även arbetat med mobilutveckling, design och kan de flesta av Adobes
-            program, som Photoshop och illustrator. Jag är alltid sugen på att
-            lära mig mer och att jobba med nya spännande verktyg!
+            Jag har erfarenhet inom webbutveckling, är mycket bekväm i
+            JavaScript och flera av dess bibliotek och ramverk som t.ex. React.
+            Jag har även arbetat med mobilutveckling, design och kan de flesta
+            av Adobes program, som Photoshop och illustrator. Jag är alltid
+            sugen på att lära mig mer och att jobba med nya spännande verktyg!
           </div>
         </div>
       </div>

@@ -3,8 +3,6 @@
   margin-bottom: 7vh;
   position: relative;
   width: calc(50% - 20px);
-  /* left: 10%; */
-  /* background: red; */
 }
 
 .project:last-child {
@@ -12,10 +10,7 @@
 }
 
 .project > h1 {
-  /* width: 70%; */
-  /* text-align: center; */
   margin-bottom: 10px;
-  /* font-size: 1.5em; */
 }
 
 .project > img {
@@ -36,28 +31,22 @@
     width: auto;
     padding: 5px;
     padding-top: 15px;
-    /* margin-bottom: 20vh; */
     font-size: 0.8em;
     margin-top: 100px;
     flex-direction: column;
   }
 
   .project {
-    /* background: red; */
     position: relative;
     width: 95%;
-    left: 2.5%;
     margin-bottom: 10vh;
   }
 
   .project > h1 {
-    /* text-align: center; */
     margin-bottom: 10px;
   }
 
   .project > img {
-    /* width: 95%;
-      left: 2.5%; */
     margin-bottom: 10px;
     width: 100%;
     left: 0;
