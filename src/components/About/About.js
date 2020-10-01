@@ -17,7 +17,11 @@ export class About extends Component {
       >
         <div
           className="about"
-          style={{ top: this.props.toggled ? 0 : '150vh' }}
+          style={{
+            transform: this.props.toggled
+              ? 'translateY(0)'
+              : 'translateY(150vh)',
+          }}
         >
           <img
             className="close-button"
